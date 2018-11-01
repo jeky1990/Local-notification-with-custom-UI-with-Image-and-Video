@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M4Y-Lb-cyx">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Notification View Controller-->
+        <scene sceneID="cwh-vc-ff4">
+            <objects>
+                <viewController id="M4Y-Lb-cyx" userLabel="Notification View Controller" customClass="NotificationViewController" customModule="LunchNotification" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iFx-dd-z6z">
+                                <rect key="frame" x="16" y="20" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iOs-ms-DlQ">
+                                <rect key="frame" x="16" y="49" width="288" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lunch.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="VOt-w2-NOO">
+                                <rect key="frame" x="69.5" y="79.5" width="181" height="110.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110.5" id="r8N-FC-dHR"/>
+                                    <constraint firstAttribute="width" secondItem="VOt-w2-NOO" secondAttribute="height" multiplier="18:11" id="xBz-ad-TgF"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.45882353186607361" green="0.74901962280273438" blue="0.66666668653488159" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="VOt-w2-NOO" firstAttribute="top" secondItem="iOs-ms-DlQ" secondAttribute="bottom" constant="10" id="5mA-1s-Ns5"/>
+                            <constraint firstItem="2BE-c3-nQJ" firstAttribute="bottom" secondItem="VOt-w2-NOO" secondAttribute="bottom" constant="10" id="6Dv-OL-ihc"/>
+                            <constraint firstItem="iFx-dd-z6z" firstAttribute="centerX" secondItem="2BE-c3-nQJ" secondAttribute="centerX" id="7Gm-fS-eeN"/>
+                            <constraint firstItem="2BE-c3-nQJ" firstAttribute="trailing" secondItem="iOs-ms-DlQ" secondAttribute="trailing" constant="16" id="X2d-Ad-sih"/>
+                            <constraint firstItem="iOs-ms-DlQ" firstAttribute="leading" secondItem="2BE-c3-nQJ" secondAttribute="leading" constant="16" id="fd9-bl-0H7"/>
+                            <constraint firstItem="iOs-ms-DlQ" firstAttribute="centerX" secondItem="2BE-c3-nQJ" secondAttribute="centerX" id="gbK-yg-M6X"/>
+                            <constraint firstItem="iOs-ms-DlQ" firstAttribute="top" secondItem="iFx-dd-z6z" secondAttribute="bottom" constant="8" id="kjf-w4-e1h"/>
+                            <constraint firstItem="iFx-dd-z6z" firstAttribute="leading" secondItem="2BE-c3-nQJ" secondAttribute="leading" constant="16" id="mC6-W5-V1Y"/>
+                            <constraint firstItem="iFx-dd-z6z" firstAttribute="top" secondItem="2BE-c3-nQJ" secondAttribute="top" constant="20" id="sgf-bM-IWf"/>
+                            <constraint firstItem="2BE-c3-nQJ" firstAttribute="trailing" secondItem="iFx-dd-z6z" secondAttribute="trailing" constant="16" id="v1R-7H-Syb"/>
+                            <constraint firstItem="VOt-w2-NOO" firstAttribute="centerX" secondItem="2BE-c3-nQJ" secondAttribute="centerX" id="yuP-4X-7k3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2BE-c3-nQJ"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="200"/>
+                    <connections>
+                        <outlet property="imageview" destination="VOt-w2-NOO" id="wq1-1i-1GZ"/>
+                        <outlet property="label" destination="iFx-dd-z6z" id="R1s-Is-TuD"/>
+                        <outlet property="label1" destination="iOs-ms-DlQ" id="KNh-Uu-qQc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-43.200000000000003" y="36.881559220389811"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="lunch.jpg" width="1000" height="943"/>
+    </resources>
+</document>
